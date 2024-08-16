@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-12T14:59:46.928Z",
+        "start_timestamp": "2024-08-12T15:24:18.346Z",
         "line": 17,
         "name": "Positive Scenario user registration",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 134119900,
+              "duration": 129870700,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 191237200,
+              "duration": 218419700,
               "status": "passed"
             },
             "line": 7,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 171744600,
+              "duration": 186886700,
               "status": "passed"
             },
             "line": 8,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 149450100,
+              "duration": 208439900,
               "status": "passed"
             },
             "line": 9,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 64404300,
+              "duration": 82545700,
               "status": "passed"
             },
             "line": 10,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 1081916000,
+              "duration": 1053641600,
               "status": "passed"
             },
             "line": 11,
@@ -107,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 11130600,
+              "duration": 15669100,
               "status": "passed"
             },
             "line": 12,
@@ -119,7 +119,7 @@
           },
           {
             "result": {
-              "duration": 35912400,
+              "duration": 63866300,
               "status": "passed"
             },
             "line": 13,
@@ -143,7 +143,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T14:59:48.884Z",
+        "start_timestamp": "2024-08-12T15:24:20.460Z",
         "line": 30,
         "name": "Negative Scenario Username not unique",
         "description": "",
@@ -153,7 +153,7 @@
         "steps": [
           {
             "result": {
-              "duration": 39594900,
+              "duration": 40133700,
               "status": "passed"
             },
             "line": 21,
@@ -165,7 +165,7 @@
           },
           {
             "result": {
-              "duration": 138581300,
+              "duration": 131391200,
               "status": "passed"
             },
             "line": 22,
@@ -177,7 +177,7 @@
           },
           {
             "result": {
-              "duration": 84061200,
+              "duration": 77209700,
               "status": "passed"
             },
             "line": 23,
@@ -195,7 +195,7 @@
           },
           {
             "result": {
-              "duration": 148438100,
+              "duration": 108062600,
               "status": "passed"
             },
             "line": 24,
@@ -213,7 +213,7 @@
           },
           {
             "result": {
-              "duration": 76277100,
+              "duration": 56602200,
               "status": "passed"
             },
             "line": 25,
@@ -225,7 +225,7 @@
           },
           {
             "result": {
-              "duration": 537527000,
+              "duration": 538177500,
               "status": "passed"
             },
             "line": 26,
@@ -259,7 +259,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T14:59:49.930Z",
+        "start_timestamp": "2024-08-12T15:24:21.448Z",
         "line": 43,
         "name": "Negative scenario username too long",
         "description": "",
@@ -269,7 +269,7 @@
         "steps": [
           {
             "result": {
-              "duration": 49842500,
+              "duration": 73864200,
               "status": "passed"
             },
             "line": 34,
@@ -281,7 +281,7 @@
           },
           {
             "result": {
-              "duration": 114712900,
+              "duration": 144568100,
               "status": "passed"
             },
             "line": 35,
@@ -293,7 +293,7 @@
           },
           {
             "result": {
-              "duration": 195382400,
+              "duration": 255178300,
               "status": "passed"
             },
             "line": 36,
@@ -311,7 +311,7 @@
           },
           {
             "result": {
-              "duration": 140873000,
+              "duration": 144019900,
               "status": "passed"
             },
             "line": 37,
@@ -329,7 +329,7 @@
           },
           {
             "result": {
-              "duration": 54300200,
+              "duration": 75443700,
               "status": "passed"
             },
             "line": 38,
@@ -341,7 +341,7 @@
           },
           {
             "result": {
-              "duration": 19551000,
+              "duration": 41207700,
               "status": "passed"
             },
             "line": 39,
@@ -375,7 +375,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T14:59:50.518Z",
+        "start_timestamp": "2024-08-12T15:24:22.195Z",
         "line": 56,
         "name": "Negative scenario empty username",
         "description": "",
@@ -385,7 +385,7 @@
         "steps": [
           {
             "result": {
-              "duration": 49876900,
+              "duration": 42331700,
               "status": "passed"
             },
             "line": 47,
@@ -397,7 +397,7 @@
           },
           {
             "result": {
-              "duration": 96967500,
+              "duration": 127464500,
               "status": "passed"
             },
             "line": 48,
@@ -409,7 +409,7 @@
           },
           {
             "result": {
-              "duration": 57555100,
+              "duration": 98430100,
               "status": "passed"
             },
             "line": 49,
@@ -421,7 +421,7 @@
           },
           {
             "result": {
-              "duration": 126128800,
+              "duration": 211106400,
               "status": "passed"
             },
             "line": 50,
@@ -439,7 +439,7 @@
           },
           {
             "result": {
-              "duration": 56752600,
+              "duration": 82881800,
               "status": "passed"
             },
             "line": 51,
@@ -451,7 +451,7 @@
           },
           {
             "result": {
-              "duration": 16470100,
+              "duration": 24668300,
               "status": "passed"
             },
             "line": 52,
@@ -485,7 +485,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T14:59:50.945Z",
+        "start_timestamp": "2024-08-12T15:24:22.798Z",
         "line": 69,
         "name": "Negative scenario empty password",
         "description": "",
@@ -495,7 +495,7 @@
         "steps": [
           {
             "result": {
-              "duration": 54854700,
+              "duration": 88375900,
               "status": "passed"
             },
             "line": 60,
@@ -507,7 +507,7 @@
           },
           {
             "result": {
-              "duration": 112744500,
+              "duration": 164628700,
               "status": "passed"
             },
             "line": 61,
@@ -519,7 +519,7 @@
           },
           {
             "result": {
-              "duration": 162450700,
+              "duration": 157210400,
               "status": "passed"
             },
             "line": 62,
@@ -537,7 +537,7 @@
           },
           {
             "result": {
-              "duration": 130429800,
+              "duration": 93279800,
               "status": "passed"
             },
             "line": 63,
@@ -549,7 +549,7 @@
           },
           {
             "result": {
-              "duration": 76063000,
+              "duration": 85961800,
               "status": "passed"
             },
             "line": 64,
@@ -561,7 +561,7 @@
           },
           {
             "result": {
-              "duration": 22198300,
+              "duration": 32116200,
               "status": "passed"
             },
             "line": 65,
@@ -595,7 +595,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T14:59:51.536Z",
+        "start_timestamp": "2024-08-12T15:24:23.444Z",
         "line": 84,
         "name": "Positive Scenario user registration Password length exactly 30 characters",
         "description": "",
@@ -605,7 +605,7 @@
         "steps": [
           {
             "result": {
-              "duration": 51387100,
+              "duration": 64969200,
               "status": "passed"
             },
             "line": 73,
@@ -617,7 +617,7 @@
           },
           {
             "result": {
-              "duration": 173308600,
+              "duration": 151791600,
               "status": "passed"
             },
             "line": 74,
@@ -629,7 +629,7 @@
           },
           {
             "result": {
-              "duration": 235018800,
+              "duration": 144312200,
               "status": "passed"
             },
             "line": 75,
@@ -647,7 +647,7 @@
           },
           {
             "result": {
-              "duration": 335673000,
+              "duration": 129584000,
               "status": "passed"
             },
             "line": 76,
@@ -665,7 +665,7 @@
           },
           {
             "result": {
-              "duration": 53809700,
+              "duration": 63419800,
               "status": "passed"
             },
             "line": 77,
@@ -677,7 +677,7 @@
           },
           {
             "result": {
-              "duration": 509279300,
+              "duration": 522837500,
               "status": "passed"
             },
             "line": 78,
@@ -699,7 +699,7 @@
           },
           {
             "result": {
-              "duration": 10754300,
+              "duration": 11020100,
               "status": "passed"
             },
             "line": 79,
@@ -711,7 +711,7 @@
           },
           {
             "result": {
-              "duration": 34238600,
+              "duration": 43156800,
               "status": "passed"
             },
             "line": 80,
@@ -735,7 +735,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T14:59:52.956Z",
+        "start_timestamp": "2024-08-12T15:24:24.599Z",
         "line": 98,
         "name": "Negative scenario password too long - new",
         "description": "\tPassword greater than 30 characters",
@@ -745,7 +745,7 @@
         "steps": [
           {
             "result": {
-              "duration": 29851900,
+              "duration": 44821900,
               "status": "passed"
             },
             "line": 89,
@@ -757,7 +757,7 @@
           },
           {
             "result": {
-              "duration": 104613400,
+              "duration": 124524700,
               "status": "passed"
             },
             "line": 90,
@@ -769,7 +769,7 @@
           },
           {
             "result": {
-              "duration": 145810500,
+              "duration": 79615100,
               "status": "passed"
             },
             "line": 91,
@@ -787,7 +787,7 @@
           },
           {
             "result": {
-              "duration": 313905100,
+              "duration": 134739500,
               "status": "passed"
             },
             "line": 92,
@@ -805,7 +805,7 @@
           },
           {
             "result": {
-              "duration": 58607300,
+              "duration": 63616600,
               "status": "passed"
             },
             "line": 93,
@@ -817,7 +817,7 @@
           },
           {
             "result": {
-              "duration": 15227300,
+              "duration": 522264300,
               "status": "passed"
             },
             "line": 94,
@@ -851,7 +851,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T14:59:53.629Z",
+        "start_timestamp": "2024-08-12T15:24:25.578Z",
         "line": 112,
         "name": "Negative Scenario credentials too long - new",
         "description": "\tBoth username and password greater than 30 characters each",
@@ -861,7 +861,7 @@
         "steps": [
           {
             "result": {
-              "duration": 44072500,
+              "duration": 66239500,
               "status": "passed"
             },
             "line": 103,
@@ -873,7 +873,7 @@
           },
           {
             "result": {
-              "duration": 103628100,
+              "duration": 118951900,
               "status": "passed"
             },
             "line": 104,
@@ -885,7 +885,7 @@
           },
           {
             "result": {
-              "duration": 273904100,
+              "duration": 143363500,
               "status": "passed"
             },
             "line": 105,
@@ -903,7 +903,7 @@
           },
           {
             "result": {
-              "duration": 318173800,
+              "duration": 146231400,
               "status": "passed"
             },
             "line": 106,
@@ -921,7 +921,7 @@
           },
           {
             "result": {
-              "duration": 94515900,
+              "duration": 64395400,
               "status": "passed"
             },
             "line": 107,
@@ -933,7 +933,7 @@
           },
           {
             "result": {
-              "duration": 15210000,
+              "duration": 22752400,
               "status": "passed"
             },
             "line": 108,
@@ -967,7 +967,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T14:59:54.486Z",
+        "start_timestamp": "2024-08-12T15:24:26.157Z",
         "line": 129,
         "name": "Positive Scenario user registration Username length exactly 30 characters - new",
         "description": "\tBoundary Analysis Username length 30 characters\n\tUsing a username with exactly 30 characters and valid password a user should be able to register an account",
@@ -977,7 +977,7 @@
         "steps": [
           {
             "result": {
-              "duration": 68406100,
+              "duration": 86272400,
               "status": "passed"
             },
             "line": 118,
@@ -989,7 +989,7 @@
           },
           {
             "result": {
-              "duration": 123858400,
+              "duration": 229908000,
               "status": "passed"
             },
             "line": 119,
@@ -1001,7 +1001,7 @@
           },
           {
             "result": {
-              "duration": 410645800,
+              "duration": 190517800,
               "status": "passed"
             },
             "line": 120,
@@ -1019,7 +1019,7 @@
           },
           {
             "result": {
-              "duration": 163485900,
+              "duration": 120411200,
               "status": "passed"
             },
             "line": 121,
@@ -1037,7 +1037,7 @@
           },
           {
             "result": {
-              "duration": 49658300,
+              "duration": 88298800,
               "status": "passed"
             },
             "line": 122,
@@ -1049,7 +1049,7 @@
           },
           {
             "result": {
-              "duration": 518888800,
+              "duration": 522964900,
               "status": "passed"
             },
             "line": 123,
@@ -1071,7 +1071,7 @@
           },
           {
             "result": {
-              "duration": 4602000,
+              "duration": 8563700,
               "status": "passed"
             },
             "line": 124,
@@ -1083,7 +1083,7 @@
           },
           {
             "result": {
-              "duration": 23241700,
+              "duration": 38415300,
               "status": "passed"
             },
             "line": 125,
@@ -1127,7 +1127,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-12T14:59:55.864Z",
+        "start_timestamp": "2024-08-12T15:24:27.457Z",
         "line": 17,
         "name": "Positive Scenario User can add moon",
         "description": "\ta valid moon name and planet, a user should be able to add a new moon to the Planetarium",
@@ -1137,7 +1137,7 @@
         "steps": [
           {
             "result": {
-              "duration": 343233600,
+              "duration": 305643100,
               "status": "passed"
             },
             "line": 7,
@@ -1149,7 +1149,7 @@
           },
           {
             "result": {
-              "duration": 261768200,
+              "duration": 749245600,
               "status": "passed"
             },
             "line": 8,
@@ -1161,7 +1161,7 @@
           },
           {
             "result": {
-              "duration": 121412300,
+              "duration": 386196200,
               "status": "passed"
             },
             "line": 9,
@@ -1179,7 +1179,7 @@
           },
           {
             "result": {
-              "duration": 278321500,
+              "duration": 270012100,
               "status": "passed"
             },
             "line": 10,
@@ -1197,7 +1197,7 @@
           },
           {
             "result": {
-              "duration": 87177700,
+              "duration": 127324000,
               "status": "passed"
             },
             "line": 11,
@@ -1215,7 +1215,7 @@
           },
           {
             "result": {
-              "duration": 152671100,
+              "duration": 541091200,
               "status": "passed"
             },
             "line": 12,
@@ -1227,7 +1227,7 @@
           },
           {
             "result": {
-              "duration": 259899200,
+              "duration": 1051210700,
               "status": "passed"
             },
             "line": 13,
@@ -1251,7 +1251,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T14:59:57.376Z",
+        "start_timestamp": "2024-08-12T15:24:31.011Z",
         "line": 32,
         "name": "Boundary Analysis Moon name length 30 characters",
         "description": "\ta moon name with exactly 30 characters, a user should be able to add a new moon",
@@ -1261,7 +1261,7 @@
         "steps": [
           {
             "result": {
-              "duration": 289602200,
+              "duration": 2228582900,
               "status": "passed"
             },
             "line": 22,
@@ -1273,7 +1273,7 @@
           },
           {
             "result": {
-              "duration": 193129100,
+              "duration": 1173506000,
               "status": "passed"
             },
             "line": 23,
@@ -1285,7 +1285,7 @@
           },
           {
             "result": {
-              "duration": 94721100,
+              "duration": 1574411300,
               "status": "passed"
             },
             "line": 24,
@@ -1303,7 +1303,7 @@
           },
           {
             "result": {
-              "duration": 267960100,
+              "duration": 1250323000,
               "status": "passed"
             },
             "line": 25,
@@ -1321,7 +1321,7 @@
           },
           {
             "result": {
-              "duration": 125137200,
+              "duration": 769840600,
               "status": "passed"
             },
             "line": 26,
@@ -1339,7 +1339,7 @@
           },
           {
             "result": {
-              "duration": 148724100,
+              "duration": 650498000,
               "status": "passed"
             },
             "line": 27,
@@ -1351,7 +1351,7 @@
           },
           {
             "result": {
-              "duration": 401571400,
+              "duration": 883252500,
               "status": "passed"
             },
             "line": 28,
@@ -1375,7 +1375,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T14:59:58.913Z",
+        "start_timestamp": "2024-08-12T15:24:39.559Z",
         "line": 46,
         "name": "Positive Scenario User can add moon without image : Error Guess Testing",
         "description": "\ta moon name without an image user should still be able to add to database",
@@ -1385,7 +1385,7 @@
         "steps": [
           {
             "result": {
-              "duration": 484288800,
+              "duration": 998535200,
               "status": "passed"
             },
             "line": 37,
@@ -1397,7 +1397,7 @@
           },
           {
             "result": {
-              "duration": 341547600,
+              "duration": 768941000,
               "status": "passed"
             },
             "line": 38,
@@ -1409,7 +1409,7 @@
           },
           {
             "result": {
-              "duration": 345011900,
+              "duration": 1551849900,
               "status": "passed"
             },
             "line": 39,
@@ -1427,7 +1427,7 @@
           },
           {
             "result": {
-              "duration": 107284300,
+              "duration": 363916100,
               "status": "passed"
             },
             "line": 40,
@@ -1445,7 +1445,7 @@
           },
           {
             "result": {
-              "duration": 130074100,
+              "duration": 199759000,
               "status": "passed"
             },
             "line": 41,
@@ -1458,7 +1458,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: The moon is added.\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat com.revature.step.AddMoonSteps.the_new_moon_should_be_added(AddMoonSteps.java:102)\r\n\tat ✽.The new moon should be added(classpath:features/AddMoons.feature:42)\r\n",
-              "duration": 30449424000,
+              "duration": 2867784500,
               "status": "failed"
             },
             "line": 42,
@@ -1485,7 +1485,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:00:30.781Z",
+        "start_timestamp": "2024-08-12T15:24:46.373Z",
         "line": 61,
         "name": "Negative Scenario Moon name too long",
         "description": "\ta moon name longer than 30 characters, a user should not be able to add a new moon",
@@ -1495,7 +1495,7 @@
         "steps": [
           {
             "result": {
-              "duration": 378476300,
+              "duration": 753065900,
               "status": "passed"
             },
             "line": 51,
@@ -1507,7 +1507,7 @@
           },
           {
             "result": {
-              "duration": 178004900,
+              "duration": 388706000,
               "status": "passed"
             },
             "line": 52,
@@ -1519,7 +1519,7 @@
           },
           {
             "result": {
-              "duration": 103766100,
+              "duration": 700891000,
               "status": "passed"
             },
             "line": 53,
@@ -1537,7 +1537,7 @@
           },
           {
             "result": {
-              "duration": 311950900,
+              "duration": 813930200,
               "status": "passed"
             },
             "line": 54,
@@ -1555,7 +1555,7 @@
           },
           {
             "result": {
-              "duration": 40098800,
+              "duration": 65840500,
               "status": "passed"
             },
             "line": 55,
@@ -1573,7 +1573,7 @@
           },
           {
             "result": {
-              "duration": 62365100,
+              "duration": 95076900,
               "status": "passed"
             },
             "line": 56,
@@ -1585,7 +1585,7 @@
           },
           {
             "result": {
-              "duration": 595125500,
+              "duration": 633325400,
               "status": "passed"
             },
             "line": 57,
@@ -1609,7 +1609,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:00:32.461Z",
+        "start_timestamp": "2024-08-12T15:24:49.846Z",
         "line": 76,
         "name": "Negative Scenario Moon name not unique",
         "description": "\ta non-unique moon name, a user should not be able to add a new moon",
@@ -1619,7 +1619,7 @@
         "steps": [
           {
             "result": {
-              "duration": 366798400,
+              "duration": 699997600,
               "status": "passed"
             },
             "line": 66,
@@ -1631,7 +1631,7 @@
           },
           {
             "result": {
-              "duration": 140003700,
+              "duration": 314893100,
               "status": "passed"
             },
             "line": 67,
@@ -1643,7 +1643,7 @@
           },
           {
             "result": {
-              "duration": 113714400,
+              "duration": 133846600,
               "status": "passed"
             },
             "line": 68,
@@ -1661,7 +1661,7 @@
           },
           {
             "result": {
-              "duration": 100269300,
+              "duration": 488568700,
               "status": "passed"
             },
             "line": 69,
@@ -1679,7 +1679,7 @@
           },
           {
             "result": {
-              "duration": 226870000,
+              "duration": 72240700,
               "status": "passed"
             },
             "line": 70,
@@ -1697,7 +1697,7 @@
           },
           {
             "result": {
-              "duration": 88074300,
+              "duration": 82059600,
               "status": "passed"
             },
             "line": 71,
@@ -1709,7 +1709,7 @@
           },
           {
             "result": {
-              "duration": 26875600,
+              "duration": 37237900,
               "status": "passed"
             },
             "line": 72,
@@ -1733,7 +1733,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:00:33.524Z",
+        "start_timestamp": "2024-08-12T15:24:51.693Z",
         "line": 90,
         "name": "Negative Scenario Empty moon name",
         "description": "\tan empty moon name, a user should not be able to add a new moon",
@@ -1743,7 +1743,7 @@
         "steps": [
           {
             "result": {
-              "duration": 441190500,
+              "duration": 9090400,
               "status": "passed"
             },
             "line": 81,
@@ -1755,7 +1755,7 @@
           },
           {
             "result": {
-              "duration": 239576100,
+              "duration": 137937100,
               "status": "passed"
             },
             "line": 82,
@@ -1767,7 +1767,7 @@
           },
           {
             "result": {
-              "duration": 455321400,
+              "duration": 145136600,
               "status": "passed"
             },
             "line": 83,
@@ -1785,7 +1785,7 @@
           },
           {
             "result": {
-              "duration": 190714600,
+              "duration": 69915000,
               "status": "passed"
             },
             "line": 84,
@@ -1803,7 +1803,7 @@
           },
           {
             "result": {
-              "duration": 83257200,
+              "duration": 86806800,
               "status": "passed"
             },
             "line": 85,
@@ -1815,7 +1815,7 @@
           },
           {
             "result": {
-              "duration": 606238700,
+              "duration": 572896600,
               "status": "passed"
             },
             "line": 86,
@@ -1839,7 +1839,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:00:35.551Z",
+        "start_timestamp": "2024-08-12T15:24:52.734Z",
         "line": 105,
         "name": "Negative Scenario Invalid image format",
         "description": "\ta valid moon name and an invalid image format, a user should not be able to add a new moon",
@@ -1849,7 +1849,7 @@
         "steps": [
           {
             "result": {
-              "duration": 423263500,
+              "duration": 413931700,
               "status": "passed"
             },
             "line": 95,
@@ -1861,7 +1861,7 @@
           },
           {
             "result": {
-              "duration": 191092900,
+              "duration": 129978400,
               "status": "passed"
             },
             "line": 96,
@@ -1873,7 +1873,7 @@
           },
           {
             "result": {
-              "duration": 111007500,
+              "duration": 116112000,
               "status": "passed"
             },
             "line": 97,
@@ -1891,7 +1891,7 @@
           },
           {
             "result": {
-              "duration": 286786800,
+              "duration": 78313100,
               "status": "passed"
             },
             "line": 98,
@@ -1909,7 +1909,7 @@
           },
           {
             "result": {
-              "duration": 81753300,
+              "duration": 243577900,
               "status": "passed"
             },
             "line": 99,
@@ -1927,7 +1927,7 @@
           },
           {
             "result": {
-              "duration": 117770800,
+              "duration": 102563900,
               "status": "passed"
             },
             "line": 100,
@@ -1940,7 +1940,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: The moon is not added.\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertFalse(Assert.java:65)\r\n\tat com.revature.step.AddMoonSteps.the_new_moon_should_not_be_added(AddMoonSteps.java:121)\r\n\tat ✽.The new moon should not be added(classpath:features/AddMoons.feature:101)\r\n",
-              "duration": 267409600,
+              "duration": 271501300,
               "status": "failed"
             },
             "line": 101,
@@ -1987,7 +1987,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-12T15:00:37.035Z",
+        "start_timestamp": "2024-08-12T15:24:54.102Z",
         "line": 16,
         "name": "Positive Scenario Add Planet with image",
         "description": "\tA user should be able to add a new planet with a valid planet name",
@@ -1997,7 +1997,7 @@
         "steps": [
           {
             "result": {
-              "duration": 454183900,
+              "duration": 431901600,
               "status": "passed"
             },
             "line": 7,
@@ -2009,7 +2009,7 @@
           },
           {
             "result": {
-              "duration": 151676100,
+              "duration": 168729700,
               "status": "passed"
             },
             "line": 8,
@@ -2021,7 +2021,7 @@
           },
           {
             "result": {
-              "duration": 139768100,
+              "duration": 481297200,
               "status": "passed"
             },
             "line": 9,
@@ -2039,7 +2039,7 @@
           },
           {
             "result": {
-              "duration": 224102200,
+              "duration": 83724300,
               "status": "passed"
             },
             "line": 10,
@@ -2051,7 +2051,7 @@
           },
           {
             "result": {
-              "duration": 110082800,
+              "duration": 117471700,
               "status": "passed"
             },
             "line": 11,
@@ -2063,7 +2063,7 @@
           },
           {
             "result": {
-              "duration": 142321100,
+              "duration": 206472400,
               "status": "passed"
             },
             "line": 12,
@@ -2093,7 +2093,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:00:38.258Z",
+        "start_timestamp": "2024-08-12T15:24:55.664Z",
         "line": 30,
         "name": "Negative Scenario Invalid Planet name",
         "description": "\tA user should not be able to add a new planet with an invalid planet name",
@@ -2103,7 +2103,7 @@
         "steps": [
           {
             "result": {
-              "duration": 912429700,
+              "duration": 649122900,
               "status": "passed"
             },
             "line": 21,
@@ -2115,7 +2115,7 @@
           },
           {
             "result": {
-              "duration": 666918500,
+              "duration": 271048900,
               "status": "passed"
             },
             "line": 22,
@@ -2127,7 +2127,7 @@
           },
           {
             "result": {
-              "duration": 343896200,
+              "duration": 295188400,
               "status": "passed"
             },
             "line": 23,
@@ -2145,7 +2145,7 @@
           },
           {
             "result": {
-              "duration": 76995300,
+              "duration": 48144100,
               "status": "passed"
             },
             "line": 24,
@@ -2157,7 +2157,7 @@
           },
           {
             "result": {
-              "duration": 275512300,
+              "duration": 311440600,
               "status": "passed"
             },
             "line": 25,
@@ -2169,7 +2169,7 @@
           },
           {
             "result": {
-              "duration": 569251900,
+              "duration": 242583900,
               "status": "passed"
             },
             "line": 26,
@@ -2202,7 +2202,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:00:41.103Z",
+        "start_timestamp": "2024-08-12T15:24:57.595Z",
         "line": 31,
         "name": "Negative Scenario Invalid Planet name",
         "description": "\tA user should not be able to add a new planet with an invalid planet name",
@@ -2212,7 +2212,7 @@
         "steps": [
           {
             "result": {
-              "duration": 417805100,
+              "duration": 527807300,
               "status": "passed"
             },
             "line": 21,
@@ -2224,7 +2224,7 @@
           },
           {
             "result": {
-              "duration": 266990100,
+              "duration": 162804000,
               "status": "passed"
             },
             "line": 22,
@@ -2236,7 +2236,7 @@
           },
           {
             "result": {
-              "duration": 337240900,
+              "duration": 215337500,
               "status": "passed"
             },
             "line": 23,
@@ -2254,7 +2254,7 @@
           },
           {
             "result": {
-              "duration": 79557300,
+              "duration": 283679800,
               "status": "passed"
             },
             "line": 24,
@@ -2266,7 +2266,7 @@
           },
           {
             "result": {
-              "duration": 83953900,
+              "duration": 200546100,
               "status": "passed"
             },
             "line": 25,
@@ -2278,7 +2278,7 @@
           },
           {
             "result": {
-              "duration": 615361500,
+              "duration": 233337000,
               "status": "passed"
             },
             "line": 26,
@@ -2311,7 +2311,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:00:42.904Z",
+        "start_timestamp": "2024-08-12T15:24:59.233Z",
         "line": 34,
         "name": "Negative Scenario Empty planet name",
         "description": "\tA user should not be able to add a new planet with an empty planet name",
@@ -2321,7 +2321,7 @@
         "steps": [
           {
             "result": {
-              "duration": 476307000,
+              "duration": 597404400,
               "status": "passed"
             },
             "line": 36,
@@ -2333,7 +2333,7 @@
           },
           {
             "result": {
-              "duration": 201759800,
+              "duration": 245983900,
               "status": "passed"
             },
             "line": 37,
@@ -2345,7 +2345,7 @@
           },
           {
             "result": {
-              "duration": 67045000,
+              "duration": 196990700,
               "status": "passed"
             },
             "line": 38,
@@ -2357,7 +2357,7 @@
           },
           {
             "result": {
-              "duration": 31361700,
+              "duration": 56825900,
               "status": "passed"
             },
             "line": 39,
@@ -2369,7 +2369,7 @@
           },
           {
             "result": {
-              "duration": 269527800,
+              "duration": 316892500,
               "status": "passed"
             },
             "line": 40,
@@ -2381,7 +2381,7 @@
           },
           {
             "result": {
-              "duration": 84302000,
+              "duration": 248050400,
               "status": "passed"
             },
             "line": 41,
@@ -2405,7 +2405,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:00:44.050Z",
+        "start_timestamp": "2024-08-12T15:25:00.920Z",
         "line": 55,
         "name": "Negative Scenario Invalid image format",
         "description": "\tA user should not be able to add a new planet with a valid planet name and invalid image format",
@@ -2415,7 +2415,7 @@
         "steps": [
           {
             "result": {
-              "duration": 440677500,
+              "duration": 427682200,
               "status": "passed"
             },
             "line": 46,
@@ -2427,7 +2427,7 @@
           },
           {
             "result": {
-              "duration": 218726500,
+              "duration": 166746100,
               "status": "passed"
             },
             "line": 47,
@@ -2439,7 +2439,7 @@
           },
           {
             "result": {
-              "duration": 443875100,
+              "duration": 140293100,
               "status": "passed"
             },
             "line": 48,
@@ -2457,7 +2457,7 @@
           },
           {
             "result": {
-              "duration": 76847600,
+              "duration": 52299000,
               "status": "passed"
             },
             "line": 49,
@@ -2469,7 +2469,7 @@
           },
           {
             "result": {
-              "duration": 75516500,
+              "duration": 353002600,
               "status": "passed"
             },
             "line": 50,
@@ -2481,8 +2481,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 2 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002722.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\vasd5\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49851/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: edfa7bf87fc7bec04225de6707d76910\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat com.revature.step.AddPlanetSteps.the_planet_should_not_be_added_to_planetarium(AddPlanetSteps.java:44)\r\n\tat ✽.The \"Venus\" planet should not be added to the planetarium(classpath:features/AddPlanets.feature:51)\r\n",
-              "duration": 2227654100,
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 2 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002722.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\vasd5\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50425/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 189d603c745845601de31fa321b5ccd1\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat com.revature.step.AddPlanetSteps.the_planet_should_not_be_added_to_planetarium(AddPlanetSteps.java:44)\r\n\tat ✽.The \"Venus\" planet should not be added to the planetarium(classpath:features/AddPlanets.feature:51)\r\n",
+              "duration": 2294263600,
               "status": "failed"
             },
             "line": 51,
@@ -2515,7 +2515,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:00:47.541Z",
+        "start_timestamp": "2024-08-12T15:25:04.500Z",
         "line": 68,
         "name": "Positive Scenario Planet added without image",
         "description": "\tA user should be able to add a new planet with a valid planet name and no image",
@@ -2525,7 +2525,7 @@
         "steps": [
           {
             "result": {
-              "duration": 619403600,
+              "duration": 1041278300,
               "status": "passed"
             },
             "line": 60,
@@ -2537,7 +2537,7 @@
           },
           {
             "result": {
-              "duration": 203263400,
+              "duration": 556638000,
               "status": "passed"
             },
             "line": 61,
@@ -2549,7 +2549,7 @@
           },
           {
             "result": {
-              "duration": 533591000,
+              "duration": 130825200,
               "status": "passed"
             },
             "line": 62,
@@ -2567,7 +2567,7 @@
           },
           {
             "result": {
-              "duration": 180697000,
+              "duration": 467419800,
               "status": "passed"
             },
             "line": 63,
@@ -2580,7 +2580,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.revature.step.AddPlanetSteps.the_planet_should_be_added_to_planetarium(AddPlanetSteps.java:38)\r\n\tat ✽.The \"Neptune\" planet should be added to the planetarium(classpath:features/AddPlanets.feature:64)\r\n",
-              "duration": 1090647700,
+              "duration": 1251279200,
               "status": "failed"
             },
             "line": 64,
@@ -2633,7 +2633,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-12T15:00:50.169Z",
+        "start_timestamp": "2024-08-12T15:25:07.973Z",
         "line": 14,
         "name": "Positive scenario user login",
         "description": "",
@@ -2643,7 +2643,7 @@
         "steps": [
           {
             "result": {
-              "duration": 33734300,
+              "duration": 85047600,
               "status": "passed"
             },
             "line": 6,
@@ -2655,7 +2655,7 @@
           },
           {
             "result": {
-              "duration": 160266900,
+              "duration": 162076200,
               "status": "passed"
             },
             "line": 7,
@@ -2673,7 +2673,7 @@
           },
           {
             "result": {
-              "duration": 98770100,
+              "duration": 121691000,
               "status": "passed"
             },
             "line": 8,
@@ -2691,7 +2691,7 @@
           },
           {
             "result": {
-              "duration": 89425500,
+              "duration": 199995500,
               "status": "passed"
             },
             "line": 9,
@@ -2703,7 +2703,7 @@
           },
           {
             "result": {
-              "duration": 59826300,
+              "duration": 123034900,
               "status": "passed"
             },
             "line": 10,
@@ -2727,7 +2727,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:00:50.637Z",
+        "start_timestamp": "2024-08-12T15:25:08.752Z",
         "line": 26,
         "name": "Negative Scenario Invalid password",
         "description": "",
@@ -2737,7 +2737,7 @@
         "steps": [
           {
             "result": {
-              "duration": 53377200,
+              "duration": 163514400,
               "status": "passed"
             },
             "line": 18,
@@ -2749,7 +2749,7 @@
           },
           {
             "result": {
-              "duration": 104128600,
+              "duration": 169625700,
               "status": "passed"
             },
             "line": 19,
@@ -2767,7 +2767,7 @@
           },
           {
             "result": {
-              "duration": 125222100,
+              "duration": 123972800,
               "status": "passed"
             },
             "line": 20,
@@ -2785,7 +2785,7 @@
           },
           {
             "result": {
-              "duration": 114687500,
+              "duration": 100112600,
               "status": "passed"
             },
             "line": 21,
@@ -2797,7 +2797,7 @@
           },
           {
             "result": {
-              "duration": 527769700,
+              "duration": 24962300,
               "status": "passed"
             },
             "line": 22,
@@ -2821,7 +2821,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:00:51.563Z",
+        "start_timestamp": "2024-08-12T15:25:09.350Z",
         "line": 38,
         "name": "Negative Scenario Invalid username",
         "description": "",
@@ -2831,7 +2831,7 @@
         "steps": [
           {
             "result": {
-              "duration": 128756600,
+              "duration": 42454500,
               "status": "passed"
             },
             "line": 30,
@@ -2843,7 +2843,7 @@
           },
           {
             "result": {
-              "duration": 150341800,
+              "duration": 153597800,
               "status": "passed"
             },
             "line": 31,
@@ -2861,7 +2861,7 @@
           },
           {
             "result": {
-              "duration": 175126900,
+              "duration": 202961600,
               "status": "passed"
             },
             "line": 32,
@@ -2879,7 +2879,7 @@
           },
           {
             "result": {
-              "duration": 72193800,
+              "duration": 82838200,
               "status": "passed"
             },
             "line": 33,
@@ -2891,7 +2891,7 @@
           },
           {
             "result": {
-              "duration": 528713500,
+              "duration": 22439200,
               "status": "passed"
             },
             "line": 34,
@@ -2915,7 +2915,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:00:52.619Z",
+        "start_timestamp": "2024-08-12T15:25:09.868Z",
         "line": 50,
         "name": "Negative scenario empty username",
         "description": "",
@@ -2925,7 +2925,7 @@
         "steps": [
           {
             "result": {
-              "duration": 37835300,
+              "duration": 41357100,
               "status": "passed"
             },
             "line": 42,
@@ -2937,7 +2937,7 @@
           },
           {
             "result": {
-              "duration": 97424200,
+              "duration": 101064700,
               "status": "passed"
             },
             "line": 43,
@@ -2955,7 +2955,7 @@
           },
           {
             "result": {
-              "duration": 94433600,
+              "duration": 127506100,
               "status": "passed"
             },
             "line": 44,
@@ -2973,7 +2973,7 @@
           },
           {
             "result": {
-              "duration": 64924600,
+              "duration": 134543100,
               "status": "passed"
             },
             "line": 45,
@@ -2985,7 +2985,7 @@
           },
           {
             "result": {
-              "duration": 542213500,
+              "duration": 17938800,
               "status": "passed"
             },
             "line": 46,
@@ -3009,7 +3009,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:00:53.455Z",
+        "start_timestamp": "2024-08-12T15:25:10.362Z",
         "line": 62,
         "name": "Negative scenario empty password",
         "description": "",
@@ -3019,7 +3019,7 @@
         "steps": [
           {
             "result": {
-              "duration": 46694500,
+              "duration": 172476900,
               "status": "passed"
             },
             "line": 54,
@@ -3031,7 +3031,7 @@
           },
           {
             "result": {
-              "duration": 121349900,
+              "duration": 154315900,
               "status": "passed"
             },
             "line": 55,
@@ -3049,7 +3049,7 @@
           },
           {
             "result": {
-              "duration": 122997300,
+              "duration": 157462500,
               "status": "passed"
             },
             "line": 56,
@@ -3067,7 +3067,7 @@
           },
           {
             "result": {
-              "duration": 99698200,
+              "duration": 178742800,
               "status": "passed"
             },
             "line": 57,
@@ -3079,7 +3079,7 @@
           },
           {
             "result": {
-              "duration": 14084700,
+              "duration": 18420600,
               "status": "passed"
             },
             "line": 58,
@@ -3123,7 +3123,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-12T15:00:53.866Z",
+        "start_timestamp": "2024-08-12T15:25:11.057Z",
         "line": 14,
         "name": "Positive Scenario Authorized user",
         "description": "\ta valid moon name, a user should be able to remove a moon from the Planetarium associated with planet they added",
@@ -3133,7 +3133,7 @@
         "steps": [
           {
             "result": {
-              "duration": 378057300,
+              "duration": 455328700,
               "status": "passed"
             },
             "line": 7,
@@ -3145,7 +3145,7 @@
           },
           {
             "result": {
-              "duration": 218613000,
+              "duration": 167222600,
               "status": "passed"
             },
             "line": 8,
@@ -3157,7 +3157,7 @@
           },
           {
             "result": {
-              "duration": 270849600,
+              "duration": 128739300,
               "status": "passed"
             },
             "line": 9,
@@ -3175,7 +3175,7 @@
           },
           {
             "result": {
-              "duration": 10395882100,
+              "duration": 2579681100,
               "status": "passed"
             },
             "line": 10,
@@ -3199,7 +3199,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:01:05.138Z",
+        "start_timestamp": "2024-08-12T15:25:14.399Z",
         "line": 26,
         "name": "Negative Scenario Unauthorized user : Error Guessing test",
         "description": "\tan unauthorized user, attempting to remove a moon should fail",
@@ -3209,7 +3209,7 @@
         "steps": [
           {
             "result": {
-              "duration": 409863300,
+              "duration": 386737000,
               "status": "passed"
             },
             "line": 19,
@@ -3221,7 +3221,7 @@
           },
           {
             "result": {
-              "duration": 148209100,
+              "duration": 118646800,
               "status": "passed"
             },
             "line": 20,
@@ -3233,7 +3233,7 @@
           },
           {
             "result": {
-              "duration": 109055700,
+              "duration": 107168800,
               "status": "passed"
             },
             "line": 21,
@@ -3251,7 +3251,7 @@
           },
           {
             "result": {
-              "duration": 10370756400,
+              "duration": 2657362900,
               "status": "passed"
             },
             "line": 22,
@@ -3278,7 +3278,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:01:16.186Z",
+        "start_timestamp": "2024-08-12T15:25:17.677Z",
         "line": 38,
         "name": "Negative Scenario Removing non-existent moon",
         "description": "\ta non-existent moon, attempting to remove it should fail",
@@ -3288,7 +3288,7 @@
         "steps": [
           {
             "result": {
-              "duration": 416405600,
+              "duration": 329566500,
               "status": "passed"
             },
             "line": 31,
@@ -3300,7 +3300,7 @@
           },
           {
             "result": {
-              "duration": 205103400,
+              "duration": 169683200,
               "status": "passed"
             },
             "line": 32,
@@ -3312,7 +3312,7 @@
           },
           {
             "result": {
-              "duration": 282311000,
+              "duration": 86776900,
               "status": "passed"
             },
             "line": 33,
@@ -3330,7 +3330,7 @@
           },
           {
             "result": {
-              "duration": 10403081300,
+              "duration": 2599061900,
               "status": "passed"
             },
             "line": 34,
@@ -3374,7 +3374,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-12T15:01:27.493Z",
+        "start_timestamp": "2024-08-12T15:25:20.878Z",
         "line": 5,
         "name": "Positive Scenario Remove Planet",
         "description": "",
@@ -3384,7 +3384,7 @@
         "steps": [
           {
             "result": {
-              "duration": 332164400,
+              "duration": 791596700,
               "status": "passed"
             },
             "line": 6,
@@ -3396,7 +3396,7 @@
           },
           {
             "result": {
-              "duration": 200176300,
+              "duration": 369152700,
               "status": "passed"
             },
             "line": 7,
@@ -3408,7 +3408,7 @@
           },
           {
             "result": {
-              "duration": 126591500,
+              "duration": 497551100,
               "status": "passed"
             },
             "line": 8,
@@ -3426,7 +3426,7 @@
           },
           {
             "result": {
-              "duration": 253477200,
+              "duration": 108784900,
               "status": "passed"
             },
             "line": 9,
@@ -3438,7 +3438,7 @@
           },
           {
             "result": {
-              "duration": 1058867500,
+              "duration": 1095500200,
               "status": "passed"
             },
             "line": 10,
@@ -3468,7 +3468,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:01:29.473Z",
+        "start_timestamp": "2024-08-12T15:25:23.759Z",
         "line": 22,
         "name": "Negative Scenario User does not own planet",
         "description": "",
@@ -3478,7 +3478,7 @@
         "steps": [
           {
             "result": {
-              "duration": 690440000,
+              "duration": 439079200,
               "status": "passed"
             },
             "line": 14,
@@ -3490,7 +3490,7 @@
           },
           {
             "result": {
-              "duration": 287790400,
+              "duration": 265762900,
               "status": "passed"
             },
             "line": 15,
@@ -3502,7 +3502,7 @@
           },
           {
             "result": {
-              "duration": 80004500,
+              "duration": 327014000,
               "status": "passed"
             },
             "line": 16,
@@ -3520,7 +3520,7 @@
           },
           {
             "result": {
-              "duration": 234392200,
+              "duration": 45278400,
               "status": "passed"
             },
             "line": 17,
@@ -3532,7 +3532,7 @@
           },
           {
             "result": {
-              "duration": 570899600,
+              "duration": 66400200,
               "status": "passed"
             },
             "line": 18,
@@ -3559,7 +3559,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:01:31.351Z",
+        "start_timestamp": "2024-08-12T15:25:24.909Z",
         "line": 34,
         "name": "Negative Scenario Removing non-existing planet",
         "description": "",
@@ -3569,7 +3569,7 @@
         "steps": [
           {
             "result": {
-              "duration": 333137500,
+              "duration": 343466400,
               "status": "passed"
             },
             "line": 26,
@@ -3581,7 +3581,7 @@
           },
           {
             "result": {
-              "duration": 220134700,
+              "duration": 337425800,
               "status": "passed"
             },
             "line": 27,
@@ -3593,7 +3593,7 @@
           },
           {
             "result": {
-              "duration": 84661100,
+              "duration": 113834300,
               "status": "passed"
             },
             "line": 28,
@@ -3611,7 +3611,7 @@
           },
           {
             "result": {
-              "duration": 237969800,
+              "duration": 58654000,
               "status": "passed"
             },
             "line": 29,
@@ -3623,7 +3623,7 @@
           },
           {
             "result": {
-              "duration": 562494000,
+              "duration": 567557700,
               "status": "passed"
             },
             "line": 30,
@@ -3667,7 +3667,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-12T15:01:32.790Z",
+        "start_timestamp": "2024-08-12T15:25:26.335Z",
         "line": 11,
         "name": "Positive scenario view celestial bodies",
         "description": "",
@@ -3677,7 +3677,7 @@
         "steps": [
           {
             "result": {
-              "duration": 368727400,
+              "duration": 357001600,
               "status": "passed"
             },
             "line": 6,
@@ -3699,7 +3699,7 @@
           },
           {
             "result": {
-              "duration": 1042395900,
+              "duration": 295849300,
               "status": "passed"
             },
             "line": 7,
@@ -3723,7 +3723,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-12T15:01:34.210Z",
+        "start_timestamp": "2024-08-12T15:25:26.994Z",
         "line": 14,
         "name": "Negative Scenario unauthenticated user",
         "description": "",
@@ -3733,7 +3733,7 @@
         "steps": [
           {
             "result": {
-              "duration": 140997200,
+              "duration": 157696000,
               "status": "passed"
             },
             "line": 15,
@@ -3745,9 +3745,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: /html/body/pre (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002722.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\vasd5\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49851/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: edfa7bf87fc7bec04225de6707d76910\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat com.revature.step.ViewCelestialBodiesSteps.the_user_should_not_view_celestial_bodies_page(ViewCelestialBodiesSteps.java:51)\r\n\tat ✽.The user should not view celestial bodies page(classpath:features/ViewCelestialBodies.feature:16)\r\n",
-              "duration": 10307895400,
-              "status": "failed"
+              "duration": 46025300,
+              "status": "passed"
             },
             "line": 16,
             "name": "The user should not view celestial bodies page",
