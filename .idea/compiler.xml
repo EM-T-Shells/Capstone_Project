@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Automation_Project" />
         <module name="Automated_Testing_Rev_P2" />
+        <module name="PlanetariumAutomation" />
       </profile>
     </annotationProcessing>
   </component>
