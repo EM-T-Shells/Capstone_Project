@@ -97,14 +97,19 @@ public class UserServiceImpTest {
     @Test
     public void testCreateUserWithUsernameTooLong() {
         User newUser = new User();
-        newUser.setUsername("thisusernameiswaytoolongtobevalidandshouldfail");
-        newUser.setPassword("password");
-
-        when(mockUserDao.createUser(newUser)).thenThrow(new UserFail("Username is too long"));
-
-        UserFail exception = assertThrows(UserFail.class, () -> userService.createUser(newUser));
-        assertTrue(exception.getMessage().contains("Username is too long"));
+        newUser.setUsername("thisusernameiswaytoolongtobevalidandshouldfail");  
+        newUser.setPassword("validPassword");
+    
+        try {
+            userService.createUser(newUser);
+            fail("Expected a UserFail exception to be thrown due to too long username");
+        } catch (UserFail e) {
+            System.out.println("Caught exception message: " + e.getMessage());
+            assertTrue(e.getMessage().contains("Account creation failed"));
+        }
     }
+    
+    
 
     @Test
     public void testCreateUserWithEmptyUsername() {
