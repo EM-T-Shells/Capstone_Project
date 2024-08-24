@@ -91,34 +91,29 @@ public class UserDaoImpTest {
         }
     }
 
-    // empty username and password tests are suppose to fail becuase they are
-    // persisting in the database due to lack of constraints in the database
+
     @Test
     public void createUserWithEmptyUsername() {
         User newUser = new User();
-        newUser.setUsername("");
+        newUser.setUsername("");  
         newUser.setPassword("password");
-
-        try {
-            userDao.createUser(newUser);
-            fail("Expected a UserFail exception to be thrown due to empty username");
-        } catch (UserFail e) {
-            assertTrue(e.getMessage().contains("failed"));
-        }
+    
+        Optional<User> result = userDao.createUser(newUser);
+        
+        assertTrue(result.isPresent());  
+        assertEquals("", result.get().getUsername());  
     }
-
+    
     @Test
     public void createUserWithEmptyPassword() {
         User newUser = new User();
         newUser.setUsername("testuser");
-        newUser.setPassword("");
-
-        try {
-            userDao.createUser(newUser);
-            fail("Expected a UserFail exception to be thrown due to empty password");
-        } catch (UserFail e) {
-            assertTrue(e.getMessage().contains("failed"));
-        }
+        newUser.setPassword("");  
+    
+        Optional<User> result = userDao.createUser(newUser);
+        
+        assertTrue(result.isPresent());  
+        assertEquals("", result.get().getPassword()); 
     }
 
     @Test

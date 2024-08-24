@@ -80,6 +80,57 @@ public class UserServiceImpTest {
     }
 
     @Test
+    public void testCreateUserWithNonUniqueUsername() {
+        User user1 = new User();
+        user1.setUsername("testuser");
+        user1.setPassword("password");
+
+        when(mockUserDao.findUserByUsername("testuser")).thenReturn(Optional.of(user1));
+
+        UserFail exception = assertThrows(UserFail.class, () -> userService.createUser(user1));
+        assertTrue(exception.getMessage().contains("Username is already in use"));
+
+        verify(mockUserDao).findUserByUsername("testuser");
+        verify(mockUserDao, never()).createUser(user1);
+    }
+
+    @Test
+    public void testCreateUserWithUsernameTooLong() {
+        User newUser = new User();
+        newUser.setUsername("thisusernameiswaytoolongtobevalidandshouldfail");
+        newUser.setPassword("password");
+
+        when(mockUserDao.createUser(newUser)).thenThrow(new UserFail("Username is too long"));
+
+        UserFail exception = assertThrows(UserFail.class, () -> userService.createUser(newUser));
+        assertTrue(exception.getMessage().contains("Username is too long"));
+    }
+
+    @Test
+    public void testCreateUserWithEmptyUsername() {
+        User newUser = new User();
+        newUser.setUsername("");
+        newUser.setPassword("password");
+
+        when(mockUserDao.createUser(newUser)).thenThrow(new UserFail("Username cannot be empty"));
+
+        UserFail exception = assertThrows(UserFail.class, () -> userService.createUser(newUser));
+        assertTrue(exception.getMessage().contains("Username cannot be empty"));
+    }
+
+    @Test
+    public void testCreateUserWithEmptyPassword() {
+        User newUser = new User();
+        newUser.setUsername("testuser");
+        newUser.setPassword("");
+
+        when(mockUserDao.createUser(newUser)).thenThrow(new UserFail("Password cannot be empty"));
+
+        UserFail exception = assertThrows(UserFail.class, () -> userService.createUser(newUser));
+        assertTrue(exception.getMessage().contains("Password cannot be empty"));
+    }
+
+    @Test
     public void testAuthenticate_success() {
         User credentials = new User();
         credentials.setUsername("validUsername");
@@ -109,5 +160,29 @@ public class UserServiceImpTest {
         assertEquals("Username and/or password do not match", exception.getMessage());
 
         verify(mockUserDao).findUserByUsername(credentials.getUsername());
+    }
+
+    @Test
+    public void testAuthenticateWithEmptyUsername() {
+        User credentials = new User();
+        credentials.setUsername("");
+        credentials.setPassword("validPassword");
+
+        when(mockUserDao.findUserByUsername(credentials.getUsername())).thenReturn(Optional.empty());
+
+        UserFail exception = assertThrows(UserFail.class, () -> userService.authenticate(credentials));
+        assertTrue(exception.getMessage().contains("Username cannot be empty"));
+    }
+
+    @Test
+    public void testAuthenticateWithEmptyPassword() {
+        User credentials = new User();
+        credentials.setUsername("validUsername");
+        credentials.setPassword("");
+
+        when(mockUserDao.findUserByUsername(credentials.getUsername())).thenReturn(Optional.of(credentials));
+
+        UserFail exception = assertThrows(UserFail.class, () -> userService.authenticate(credentials));
+        assertTrue(exception.getMessage().contains("Password cannot be empty"));
     }
 }
