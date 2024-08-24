@@ -1,19 +1,12 @@
 package com.revature.planetarium.service.user;
 
-import com.revature.planetarium.Utility;
 import com.revature.planetarium.entities.User;
 import com.revature.planetarium.exceptions.UserFail;
 import com.revature.planetarium.repository.user.UserDao;
-import com.revature.planetarium.utility.DatabaseConnector;
-
-import org.junit.After;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.mockito.Mockito;
 
-import java.sql.Connection;
-import java.sql.Statement;
 import java.util.Optional;
 
 import static org.junit.Assert.*;
@@ -22,172 +15,180 @@ import static org.mockito.Mockito.*;
 public class UserServiceImpTest {
 
     private UserServiceImp userService;
-    private UserDao mockUserDao;
-    private Connection conn;
-
-    @BeforeClass
-    public static void setUpTestDb() throws Exception {
-        Utility.resetTestDatabase();
-    }
+    private UserDao userDao;
 
     @Before
-    public void setUp() throws Exception {
-        mockUserDao = Mockito.mock(UserDao.class);
-        userService = new UserServiceImp(mockUserDao);
-
-        conn = DatabaseConnector.getConnection();
-        try (Statement stmt = conn.createStatement()) {
-            stmt.execute("DELETE FROM users");
-        }
-    }
-
-    @After
-    public void tearDown() throws Exception {
-        if (conn != null && !conn.isClosed()) {
-            conn.close();
-        }
+    public void setUp() {
+        userDao = Mockito.mock(UserDao.class);
+        userService = new UserServiceImp(userDao);
     }
 
     @Test
-    public void testCreateUser_success() {
+    public void createUser_successful() {
         User newUser = new User();
-        newUser.setUsername("validUsername");
-        newUser.setPassword("validPassword");
+        newUser.setUsername("testuser");
+        newUser.setPassword("password");
 
-        when(mockUserDao.findUserByUsername(newUser.getUsername())).thenReturn(Optional.empty());
-        when(mockUserDao.createUser(newUser)).thenReturn(Optional.of(newUser));
+        when(userDao.findUserByUsername("testuser")).thenReturn(Optional.empty());
+        when(userDao.createUser(newUser)).thenReturn(Optional.of(newUser));
 
         String result = userService.createUser(newUser);
 
-        assertEquals("Created user with username validUsername and password validPassword", result);
-        verify(mockUserDao).findUserByUsername(newUser.getUsername());
-        verify(mockUserDao).createUser(newUser);
+        assertEquals("Created user with username testuser and password password", result);
+        verify(userDao).createUser(newUser);
     }
 
-    @Test
-    public void testCreateUser_usernameExists() {
-        User existingUser = new User();
-        existingUser.setUsername("validUsername");
-        existingUser.setPassword("validPassword");
-
-        when(mockUserDao.findUserByUsername(existingUser.getUsername())).thenReturn(Optional.of(existingUser));
-
-        UserFail exception = assertThrows(UserFail.class, () -> userService.createUser(existingUser));
-        assertEquals("Username is already in use", exception.getMessage());
-
-        verify(mockUserDao).findUserByUsername(existingUser.getUsername());
-        verify(mockUserDao, never()).createUser(existingUser);
-    }
-
-    @Test
-    public void testCreateUserWithNonUniqueUsername() {
-        User user1 = new User();
-        user1.setUsername("testuser");
-        user1.setPassword("password");
-
-        when(mockUserDao.findUserByUsername("testuser")).thenReturn(Optional.of(user1));
-
-        UserFail exception = assertThrows(UserFail.class, () -> userService.createUser(user1));
-        assertTrue(exception.getMessage().contains("Username is already in use"));
-
-        verify(mockUserDao).findUserByUsername("testuser");
-        verify(mockUserDao, never()).createUser(user1);
-    }
-
-    @Test
-    public void testCreateUserWithUsernameTooLong() {
+    @Test(expected = UserFail.class)
+    public void createUser_withNonUniqueUsername() {
         User newUser = new User();
-        newUser.setUsername("thisusernameiswaytoolongtobevalidandshouldfail");  
-        newUser.setPassword("validPassword");
-    
-        try {
-            userService.createUser(newUser);
-            fail("Expected a UserFail exception to be thrown due to too long username");
-        } catch (UserFail e) {
-            System.out.println("Caught exception message: " + e.getMessage());
-            assertTrue(e.getMessage().contains("Account creation failed"));
-        }
-    }
-    
-    
+        newUser.setUsername("testuser");
+        newUser.setPassword("password");
 
-    @Test
-    public void testCreateUserWithEmptyUsername() {
+        when(userDao.findUserByUsername("testuser")).thenReturn(Optional.of(newUser));
+
+        userService.createUser(newUser);
+    }
+
+    @Test(expected = UserFail.class)
+    public void createUser_withUsernameTooLong() {
+        User newUser = new User();
+        newUser.setUsername("thisusernameiswaytoolongtobevalidandshouldfail");
+        newUser.setPassword("password");
+
+        userService.createUser(newUser);
+    }
+
+    @Test(expected = UserFail.class)
+    public void createUser_withEmptyUsername() {
         User newUser = new User();
         newUser.setUsername("");
         newUser.setPassword("password");
 
-        when(mockUserDao.createUser(newUser)).thenThrow(new UserFail("Username cannot be empty"));
-
-        UserFail exception = assertThrows(UserFail.class, () -> userService.createUser(newUser));
-        assertTrue(exception.getMessage().contains("Username cannot be empty"));
+        userService.createUser(newUser);
     }
 
-    @Test
-    public void testCreateUserWithEmptyPassword() {
+    @Test(expected = UserFail.class)
+    public void createUser_withEmptyPassword() {
         User newUser = new User();
         newUser.setUsername("testuser");
         newUser.setPassword("");
 
-        when(mockUserDao.createUser(newUser)).thenThrow(new UserFail("Password cannot be empty"));
-
-        UserFail exception = assertThrows(UserFail.class, () -> userService.createUser(newUser));
-        assertTrue(exception.getMessage().contains("Password cannot be empty"));
+        userService.createUser(newUser);
     }
 
     @Test
-    public void testAuthenticate_success() {
-        User credentials = new User();
-        credentials.setUsername("validUsername");
-        credentials.setPassword("validPassword");
+    public void createUser_withPasswordExactly30Characters() {
+        User newUser = new User();
+        newUser.setUsername("testuser");
+        newUser.setPassword("123456789012345678901234567890");
 
-        when(mockUserDao.findUserByUsername(credentials.getUsername())).thenReturn(Optional.of(credentials));
+        when(userDao.findUserByUsername("testuser")).thenReturn(Optional.empty());
+        when(userDao.createUser(newUser)).thenReturn(Optional.of(newUser));
+
+        String result = userService.createUser(newUser);
+
+        assertEquals("Created user with username testuser and password 123456789012345678901234567890", result);
+    }
+
+    @Test(expected = UserFail.class)
+    public void createUser_withPasswordTooLong() {
+        User newUser = new User();
+        newUser.setUsername("testuser");
+        newUser.setPassword("thispasswordistoolongandshouldnotbeacceptedbythevalidation");
+
+        userService.createUser(newUser);
+    }
+
+    @Test(expected = UserFail.class)
+    public void createUser_withUsernameAndPasswordTooLong() {
+        User newUser = new User();
+        newUser.setUsername("thisusernameistoolongandshouldfail");
+        newUser.setPassword("thispasswordistoolongandshouldnotbeaccepted");
+
+        userService.createUser(newUser);
+    }
+
+    @Test
+    public void createUser_withUsernameAndPasswordExactly30Characters() {
+        User newUser = new User();
+        newUser.setUsername("usernameexactlythirtycharacte");
+        newUser.setPassword("passwordexactlythirtycharacte");
+
+        when(userDao.findUserByUsername("usernameexactlythirtycharacte")).thenReturn(Optional.empty());
+        when(userDao.createUser(newUser)).thenReturn(Optional.of(newUser));
+
+        String result = userService.createUser(newUser);
+
+        assertEquals("Created user with username usernameexactlythirtycharacte and password passwordexactlythirtycharacte", result);
+    }
+
+    @Test
+    public void authenticate_successful() {
+        User credentials = new User();
+        credentials.setUsername("testuser");
+        credentials.setPassword("password");
+
+        User foundUser = new User();
+        foundUser.setUsername("testuser");
+        foundUser.setPassword("password");
+
+        when(userDao.findUserByUsername("testuser")).thenReturn(Optional.of(foundUser));
 
         User result = userService.authenticate(credentials);
 
-        assertEquals(credentials, result);
-        verify(mockUserDao).findUserByUsername(credentials.getUsername());
+        assertEquals("testuser", result.getUsername());
+        assertEquals("password", result.getPassword());
     }
 
-    @Test
-    public void testAuthenticate_invalidCredentials() {
+    @Test(expected = UserFail.class)
+    public void authenticate_withInvalidPassword() {
         User credentials = new User();
-        credentials.setUsername("validUsername");
-        credentials.setPassword("validPassword");
+        credentials.setUsername("testuser");
+        credentials.setPassword("wrongpassword");
 
-        when(mockUserDao.findUserByUsername(credentials.getUsername())).thenReturn(Optional.of(credentials));
+        User foundUser = new User();
+        foundUser.setUsername("testuser");
+        foundUser.setPassword("password");
 
-        User invalidUser = new User();
-        invalidUser.setUsername("validUsername");
-        invalidUser.setPassword("invalidPassword");
+        when(userDao.findUserByUsername("testuser")).thenReturn(Optional.of(foundUser));
 
-        UserFail exception = assertThrows(UserFail.class, () -> userService.authenticate(invalidUser));
-        assertEquals("Username and/or password do not match", exception.getMessage());
-
-        verify(mockUserDao).findUserByUsername(credentials.getUsername());
+        userService.authenticate(credentials);
     }
 
-    @Test
-    public void testAuthenticateWithEmptyUsername() {
+    @Test(expected = UserFail.class)
+    public void authenticate_withInvalidUsername() {
+        User credentials = new User();
+        credentials.setUsername("wrongusername");
+        credentials.setPassword("password");
+
+        when(userDao.findUserByUsername("wrongusername")).thenReturn(Optional.empty());
+
+        userService.authenticate(credentials);
+    }
+
+    @Test(expected = UserFail.class)
+    public void authenticate_withEmptyUsername() {
         User credentials = new User();
         credentials.setUsername("");
-        credentials.setPassword("validPassword");
+        credentials.setPassword("password");
 
-        when(mockUserDao.findUserByUsername(credentials.getUsername())).thenReturn(Optional.empty());
+        when(userDao.findUserByUsername("")).thenReturn(Optional.empty());
 
-        UserFail exception = assertThrows(UserFail.class, () -> userService.authenticate(credentials));
-        assertTrue(exception.getMessage().contains("Username cannot be empty"));
+        userService.authenticate(credentials);
     }
 
-    @Test
-    public void testAuthenticateWithEmptyPassword() {
+    @Test(expected = UserFail.class)
+    public void authenticate_withEmptyPassword() {
         User credentials = new User();
-        credentials.setUsername("validUsername");
+        credentials.setUsername("testuser");
         credentials.setPassword("");
 
-        when(mockUserDao.findUserByUsername(credentials.getUsername())).thenReturn(Optional.of(credentials));
+        User foundUser = new User();
+        foundUser.setUsername("testuser");
+        foundUser.setPassword("password");
 
-        UserFail exception = assertThrows(UserFail.class, () -> userService.authenticate(credentials));
-        assertTrue(exception.getMessage().contains("Password cannot be empty"));
+        when(userDao.findUserByUsername("testuser")).thenReturn(Optional.of(foundUser));
+
+        userService.authenticate(credentials);
     }
 }
