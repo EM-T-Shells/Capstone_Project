@@ -10,6 +10,7 @@ import org.mockito.Mockito;
 import java.util.Optional;
 
 import static org.junit.Assert.*;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
 public class UserServiceImpTest {
@@ -22,6 +23,8 @@ public class UserServiceImpTest {
         userDao = Mockito.mock(UserDao.class);
         userService = new UserServiceImp(userDao);
     }
+
+    // create user tests
 
     @Test
     public void createUser_successful() {
@@ -46,7 +49,11 @@ public class UserServiceImpTest {
 
         when(userDao.findUserByUsername("testuser")).thenReturn(Optional.of(newUser));
 
-        userService.createUser(newUser);
+        try {
+            userService.createUser(newUser);
+        } finally {
+            verify(userDao, never()).createUser(any(User.class));
+        }
     }
 
     @Test(expected = UserFail.class)
@@ -55,7 +62,11 @@ public class UserServiceImpTest {
         newUser.setUsername("thisusernameiswaytoolongtobevalidandshouldfail");
         newUser.setPassword("password");
 
-        userService.createUser(newUser);
+        try {
+            userService.createUser(newUser);
+        } finally {
+            verify(userDao, never()).createUser(any(User.class));
+        }
     }
 
     @Test(expected = UserFail.class)
@@ -64,7 +75,11 @@ public class UserServiceImpTest {
         newUser.setUsername("");
         newUser.setPassword("password");
 
-        userService.createUser(newUser);
+        try {
+            userService.createUser(newUser);
+        } finally {
+            verify(userDao, never()).createUser(any(User.class));
+        }
     }
 
     @Test(expected = UserFail.class)
@@ -73,7 +88,11 @@ public class UserServiceImpTest {
         newUser.setUsername("testuser");
         newUser.setPassword("");
 
-        userService.createUser(newUser);
+        try {
+            userService.createUser(newUser);
+        } finally {
+            verify(userDao, never()).createUser(any(User.class));
+        }
     }
 
     @Test
@@ -96,7 +115,11 @@ public class UserServiceImpTest {
         newUser.setUsername("testuser");
         newUser.setPassword("thispasswordistoolongandshouldnotbeacceptedbythevalidation");
 
-        userService.createUser(newUser);
+        try {
+            userService.createUser(newUser);
+        } finally {
+            verify(userDao, never()).createUser(any(User.class));
+        }
     }
 
     @Test(expected = UserFail.class)
@@ -105,7 +128,11 @@ public class UserServiceImpTest {
         newUser.setUsername("thisusernameistoolongandshouldfail");
         newUser.setPassword("thispasswordistoolongandshouldnotbeaccepted");
 
-        userService.createUser(newUser);
+        try {
+            userService.createUser(newUser);
+        } finally {
+            verify(userDao, never()).createUser(any(User.class));
+        }
     }
 
     @Test
@@ -119,8 +146,12 @@ public class UserServiceImpTest {
 
         String result = userService.createUser(newUser);
 
-        assertEquals("Created user with username usernameexactlythirtycharacte and password passwordexactlythirtycharacte", result);
+        assertEquals(
+                "Created user with username usernameexactlythirtycharacte and password passwordexactlythirtycharacte",
+                result);
     }
+
+    // login tests
 
     @Test
     public void authenticate_successful() {
