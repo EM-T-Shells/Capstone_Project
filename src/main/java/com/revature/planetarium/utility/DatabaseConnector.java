@@ -14,5 +14,4 @@ public class DatabaseConnector {
         String url = System.getenv("PLANETARIUM");
         return DriverManager.getConnection(url, config.toProperties());
     }
-
 }
