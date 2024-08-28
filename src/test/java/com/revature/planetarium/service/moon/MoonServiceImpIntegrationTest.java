@@ -5,7 +5,6 @@ import com.revature.planetarium.entities.Moon;
 import com.revature.planetarium.repository.moon.MoonDao;
 import com.revature.planetarium.repository.moon.MoonDaoImp;
 import org.junit.*;
-import org.mockito.Mockito;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -13,7 +12,6 @@ import java.nio.file.Paths;
 import java.util.Base64;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Optional;
 
 public class MoonServiceImpIntegrationTest {
 
