@@ -33,5 +33,4 @@ public class DatabaseConnector {
             throw new SQLException("Failed to read config file");
         }
     }
-
 }
