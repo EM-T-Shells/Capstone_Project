@@ -4,7 +4,7 @@ import com.revature.TestRunner;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.Alert;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class RemovePlanetSteps {
@@ -22,7 +22,9 @@ public class RemovePlanetSteps {
 
     @Then("The planet, {string}, should be removed from the planetarium")
     public void thePlanetShouldBeRemovedFromThePlanetarium(String name) {
-        Assert.assertFalse(TestRunner.homePage.checkCelestialBody(name));
+        Assert.assertThrows(TimeoutException.class, () -> {
+           TestRunner.homePage.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr/td[contains(text(),\"" + name + "\")]")));
+        });
     }
 
     @Then("The planet should fail to be deleted")
