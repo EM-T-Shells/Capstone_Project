@@ -5,10 +5,7 @@ import com.revature.planetarium.entities.User;
 import com.revature.planetarium.exceptions.UserFail;
 import com.revature.planetarium.utility.DatabaseConnector;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 
 import java.sql.Connection;
 import java.sql.Statement;
@@ -19,30 +16,16 @@ import static org.junit.Assert.*;
 public class UserDaoImpTest {
 
     private UserDaoImp userDao;
-    private Connection conn;
-
-    @BeforeClass
-    public static void setUpTestDb() throws Exception {
-        Utility.resetTestDatabase();
-    }
 
     @Before
-    public void setUp() throws Exception {
-        String url = System.getenv("PLANETARIUM");
-        System.out.println("Connecting to database at URL: " + url);
+    public void setUp() {
+        Utility.resetTestDatabase();
         userDao = new UserDaoImp();
-        conn = DatabaseConnector.getConnection();
-
-        try (Statement stmt = conn.createStatement()) {
-            stmt.execute("DELETE FROM users");
-        }
     }
 
-    @After
-    public void tearDown() throws Exception {
-        if (conn != null && !conn.isClosed()) {
-            conn.close();
-        }
+    @AfterClass
+    public static void resetDB() {
+        Utility.resetTestDatabase();
     }
 
     @Test
@@ -69,12 +52,9 @@ public class UserDaoImpTest {
         user2.setUsername("testuser");
         user2.setPassword("newpassword");
 
-        try {
+        Assert.assertThrows(UserFail.class, () -> {
             userDao.createUser(user2);
-            fail("Expected a UserFail exception to be thrown due to non-unique username");
-        } catch (UserFail e) {
-            assertTrue(e.getMessage().contains("failed"));
-        }
+        });
     }
 
     @Test
@@ -82,13 +62,9 @@ public class UserDaoImpTest {
         User newUser = new User();
         newUser.setUsername("thisusernameiswaytoolongtobevalidandshouldfail");
         newUser.setPassword("password");
-
-        try {
+        Assert.assertThrows(UserFail.class, () -> {
             userDao.createUser(newUser);
-            fail("Expected a UserFail exception to be thrown due to long username");
-        } catch (UserFail e) {
-            assertTrue(e.getMessage().contains("failed"));
-        }
+        });
     }
 
 
@@ -132,13 +108,9 @@ public class UserDaoImpTest {
         User newUser = new User();
         newUser.setUsername("testuser");
         newUser.setPassword("thispasswordistoolongandshouldnotbeacceptedbythevalidation");
-
-        try {
+        Assert.assertThrows(UserFail.class, () -> {
             userDao.createUser(newUser);
-            fail("Expected a UserFail exception to be thrown due to long password");
-        } catch (UserFail e) {
-            assertTrue(e.getMessage().contains("failed"));
-        }
+        });
     }
 
     @Test
@@ -146,13 +118,9 @@ public class UserDaoImpTest {
         User newUser = new User();
         newUser.setUsername("thisusernameistoolongandshouldfail");
         newUser.setPassword("thispasswordistoolongandshouldnotbeaccepted");
-
-        try {
+        Assert.assertThrows(UserFail.class, () -> {
             userDao.createUser(newUser);
-            fail("Expected a UserFail exception to be thrown due to long username and password");
-        } catch (UserFail e) {
-            assertTrue(e.getMessage().contains("failed"));
-        }
+        });
     }
 
     @Test

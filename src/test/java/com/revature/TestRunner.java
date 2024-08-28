@@ -1,11 +1,14 @@
 package com.revature;
 
+import com.revature.planetarium.Utility;
 import com.revature.pom.CreateAccountPage;
 import com.revature.pom.HomePage;
 import com.revature.pom.LoginPage;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
@@ -32,6 +35,7 @@ public class TestRunner {
 
     @BeforeClass
     public static void setup() {
+        Utility.resetTestDatabase();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
         loginPage = new LoginPage(driver);
@@ -41,6 +45,7 @@ public class TestRunner {
 
     @AfterClass
     public static void tearDown() {
+        Utility.resetTestDatabase();
         driver.quit();
     }
 }

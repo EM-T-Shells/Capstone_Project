@@ -46,6 +46,7 @@ public class PlanetDaoImpTest {
 
     @After
     public void tearDown() throws Exception {
+        Utility.resetTestDatabase();
     }
 
     @Test

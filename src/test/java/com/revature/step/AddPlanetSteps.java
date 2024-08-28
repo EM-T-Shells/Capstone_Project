@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class AddPlanetSteps {
@@ -35,6 +36,7 @@ public class AddPlanetSteps {
 
     @Then("The {string} planet should be added to the planetarium")
     public void the_planet_should_be_added_to_planetarium(String name) {
+        TestRunner.homePage.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr/td[contains(text(),\"" + name + "\")]")));
         Assert.assertTrue(TestRunner.homePage.checkCelestialBody(name));
     }
 

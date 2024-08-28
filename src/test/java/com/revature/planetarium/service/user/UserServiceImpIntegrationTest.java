@@ -6,10 +6,7 @@ import com.revature.planetarium.repository.user.UserDaoImp;
 import com.revature.planetarium.utility.DatabaseConnector;
 import com.revature.planetarium.Utility;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 
 import java.sql.Connection;
 import java.sql.Statement;
@@ -21,29 +18,17 @@ public class UserServiceImpIntegrationTest {
 
     private UserServiceImp userService;
     private UserDaoImp userDao;
-    private Connection conn;
-
-    @BeforeClass
-    public static void setUpTestDb() throws Exception {
-        Utility.resetTestDatabase();
-    }
 
     @Before
-    public void setUp() throws Exception {
-        conn = DatabaseConnector.getConnection();
+    public void setUp() {
+        Utility.resetTestDatabase();
         userDao = new UserDaoImp();
         userService = new UserServiceImp(userDao);
-
-        try (Statement stmt = conn.createStatement()) {
-            stmt.execute("DELETE FROM users");
-        }
     }
 
-    @After
-    public void tearDown() throws Exception {
-        if (conn != null && !conn.isClosed()) {
-            conn.close();
-        }
+    @AfterClass
+    public static void tearDown() {
+        Utility.resetTestDatabase();
     }
 
 // createUser tests

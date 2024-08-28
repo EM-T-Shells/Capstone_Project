@@ -1,8 +1,10 @@
 package com.revature.planetarium.service.user;
 
+import com.revature.planetarium.Utility;
 import com.revature.planetarium.entities.User;
 import com.revature.planetarium.exceptions.UserFail;
 import com.revature.planetarium.repository.user.UserDao;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -20,8 +22,14 @@ public class UserServiceImpTest {
 
     @Before
     public void setUp() {
+        Utility.resetTestDatabase();
         userDao = Mockito.mock(UserDao.class);
         userService = new UserServiceImp(userDao);
+    }
+
+    @AfterClass
+    public static void tearDown() {
+        Utility.resetTestDatabase();
     }
 
     // create user tests
