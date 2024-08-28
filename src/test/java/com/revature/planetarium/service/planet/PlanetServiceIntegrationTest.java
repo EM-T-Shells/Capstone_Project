@@ -5,10 +5,7 @@ import com.revature.planetarium.entities.Planet;
 import com.revature.planetarium.exceptions.PlanetFail;
 import com.revature.planetarium.repository.planet.PlanetDao;
 import com.revature.planetarium.repository.planet.PlanetDaoImp;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 
 import java.util.List;
 
@@ -26,7 +23,7 @@ public class PlanetServiceIntegrationTest {
         // validPlanet for Positive Scenarios
         validPlanet = new Planet();
         validPlanet.setPlanetName("Furina");
-        validPlanet.setPlanetId(3);
+        validPlanet.setPlanetId(5);
         validPlanet.setOwnerId(1);
         // Invalid Planets for Negative Scenarios
         tooLongPlanet = new Planet();
@@ -125,7 +122,7 @@ public class PlanetServiceIntegrationTest {
     @Test
     public void testSelectAllPlanets() {
         List<Planet> result = planetService.selectAllPlanets();
-        Assert.assertEquals(2, result.size());
+        Assert.assertEquals(3, result.size());
         Assert.assertTrue(result.contains(existingPlanet));
     }
 
@@ -201,5 +198,10 @@ public class PlanetServiceIntegrationTest {
         Assert.assertThrows(PlanetFail.class, () -> {
             planetService.deletePlanet(false);
         });
+    }
+
+    @AfterClass
+    public static void teardown() {
+        Utility.resetTestDatabase();
     }
 }
